@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   post 'now_following' => 'epicenter#now_following'
 
   post 'unfollow' => 'epicenter#unfollow'
+  
+  get 'js_practice' => 'epicenter#js_practice'
 
   resources :tweets
   devise_for :users
